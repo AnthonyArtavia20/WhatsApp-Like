@@ -7,6 +7,7 @@ C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyW
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.AssemblyInfoInputs.cache
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.AssemblyInfo.cs
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.sourcelink.json
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.dll
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\refint\MyWinFormsApp.dll
 C:\Users\Anthony\Desktop\WhatsAppLike\MyWinFormsApp\obj\Debug\net8.0-windows\MyWinFormsApp.pdb

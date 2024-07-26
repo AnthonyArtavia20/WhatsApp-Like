@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anthony\\Desktop\\WhatsApplike\\MyWinFormsApp\\MyWinFormsApp.csproj": {}
+    "C:\\Users\\Anthony\\Desktop\\WhatsAppLike\\MyWinFormsApp\\MyWinFormsApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anthony\\Desktop\\WhatsApplike\\MyWinFormsApp\\MyWinFormsApp.csproj": {
+    "C:\\Users\\Anthony\\Desktop\\WhatsAppLike\\MyWinFormsApp\\MyWinFormsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anthony\\Desktop\\WhatsApplike\\MyWinFormsApp\\MyWinFormsApp.csproj",
+        "projectUniqueName": "C:\\Users\\Anthony\\Desktop\\WhatsAppLike\\MyWinFormsApp\\MyWinFormsApp.csproj",
         "projectName": "MyWinFormsApp",
-        "projectPath": "C:\\Users\\Anthony\\Desktop\\WhatsApplike\\MyWinFormsApp\\MyWinFormsApp.csproj",
+        "projectPath": "C:\\Users\\Anthony\\Desktop\\WhatsAppLike\\MyWinFormsApp\\MyWinFormsApp.csproj",
         "packagesPath": "C:\\Users\\Anthony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anthony\\Desktop\\WhatsApplike\\MyWinFormsApp\\obj\\",
+        "outputPath": "C:\\Users\\Anthony\\Desktop\\WhatsAppLike\\MyWinFormsApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anthony\\AppData\\Roaming\\NuGet\\NuGet.Config"
