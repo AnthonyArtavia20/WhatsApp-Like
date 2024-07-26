@@ -15,7 +15,7 @@
 ##### 3) Finalmente se realiza este proceso cuantas veces sean necesarias con el fin de crear varias instancias del programa que actuaran como clientes.
 
 ## ¿Cómo funciona este programa?
-##### Este programa está hecho en el lenguaje de programación c# en .NET8 utilizando microsoft forms. Tiene la capacidad de comunicar puertos TCP/IP entre sí con la finalidad de enviar texto como mensajes, haciendo la ilusión de un chat de mensajería.
+##### Este programa está hecho en el lenguaje de programación c# en .NET8 utilizando microsoft forms. Tiene la capacidad de comunicar puertos TCP/IP mediante sockets para envío/recepción de mensajes entre sí con la finalidad de enviar texto como mensajes, haciendo la ilusión de un chat de mensajería.
 
 - Se utilizan las siguientes librerías para lograrlo:
 	- using System.Net;
