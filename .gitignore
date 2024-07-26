@@ -1,0 +1,20 @@
+# Directorios
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+
+# Archivos de Visual Studio
+.vs/
+
+# Archivos temporales
+*.tmp
+*.cache
+
+# Archivos de configuración local
+*.Development.json
+
+# Logs
+*.log
