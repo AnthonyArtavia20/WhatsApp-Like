@@ -88,10 +88,11 @@ namespace MyWinFormsApp {
                         {
 
                             await writer.WriteLineAsync($"Desde puerto <{localPort}>:{mensaje}"); //Se modificó para que pueda enviar a la par del mensaje el puerto de origen.
+                            await writer.WriteLineAsync(); //Para dar un salto de linea
                             writer.Flush(); //Nota el uso de Flush: Cuando se usa "StreamWriter" los datos no se envían inmediatamente al destino (en este caso, la red). En lugar de eso, se almacenan temporalmente en un buffer.
                                                             //"Flush" asegura que todos los datos que están en el buffer se escriban inmediatamente al flujo subyacente, importantísimo cuando se necesita enviar los mensajes inmediatamente directo al cliente conectado.
 
-                            textBox3.AppendText($"[Tú]{$"Desde puerto <{localPort}>:{mensaje}"}{Environment.NewLine}"); //Solución para poder mostrar el texto enviado tanto en la text3 del origen como la del destino, esto se logra haciendo que en la función del botón  se agregue el texto en la textbox3 actual con la función "AppendText" antes de pasar el mensaje al cliente.
+                            textBox3.AppendText($"[Tú]{$"Desde puerto <{localPort}>:{mensaje}"}{Environment.NewLine}{Environment.NewLine}"); //Solución para poder mostrar el texto enviado tanto en la text3 del origen como la del destino, esto se logra haciendo que en la función del botón  se agregue el texto en la textbox3 actual con la función "AppendText" antes de pasar el mensaje al cliente.
                             textBox1.Text = "";
                         }
                     }
