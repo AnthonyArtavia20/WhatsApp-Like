@@ -2,7 +2,7 @@
 
 ### ¿Cómo usar?
 
-##### Se  descargar los archivos aquí disponibles y puesterior se abre la carpeta en VisualStudioCode, luego desde la terminal, ya sea desde powershell , cmd o bien desde la misma terminal powershell de visual ejecutar la siguiente serie de comandos:
+##### Se  descargar los archivos aquí disponibles y posterior se abre la carpeta en VisualStudioCode, luego desde la terminal, ya sea desde powershell , cmd o bien desde la misma terminal powershell de visual ejecutar la siguiente serie de comandos:
 
 ##### 1) Se realiza la navegación hasta la carpeta por medio del comando:
 
