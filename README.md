@@ -10,7 +10,7 @@
 
 ##### 2) Posterior se ejecutar el siguiente comando desde la terminal estando dentro del directorio:
 
-`PS c:\users\Anthony\Desktop\> donet run -port <1- 65535>` Aquí importante escojer cual puerto quiere utilizar. se recomienda el 5000 y 5001 para pruebas, ya que no son ocupados por servicios comunes.
+`PS c:\users\Anthony\Desktop\> donet run -port <1- 65535>` Aquí importante escojer cual puerto quiere utilizar. Se recomienda el 5000 y 5001 para pruebas, ya que no son ocupados por servicios comunes.
 
 ##### 3) Finalmente se realiza este proceso cuantas veces sean necesarias con el fin de crear varias instancias del programa que actuaran como clientes.
 
