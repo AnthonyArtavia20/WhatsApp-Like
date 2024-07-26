@@ -1,13 +1,13 @@
 # Directorios
-bin/
-obj/
+/bin
+/obj
 
 # Archivos de usuario
-*.user
+MyWinFormsApp.csproj
 *.suo
 
 # Archivos de Visual Studio
-.vs/
+/.vs
 
 # Archivos temporales
 *.tmp
