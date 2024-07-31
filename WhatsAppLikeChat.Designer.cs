@@ -41,7 +41,7 @@
             //Texto decorativo del creador.
             this.label5 = DesignerBuilding.CreateLabel("label5", "Creador: Anthony José Artavia Leitón", 50,480,210,20);
 
-            // Agregar controles al formulario
+            // Agregar, colocar y mostrar los elementos de la interfaz en el Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
