@@ -9,7 +9,7 @@ namespace MyWinFormsApp
         [STAThread]
         static void Main(string[] args)
         {
-            string port = null;
+            string? port = null; // El "?" indica que la variable puede tener un valor del tipo especificado o un valor null. Esto se conoce como un "tipo nullable".
 
             // Analiza el texto ingresado por la línea de comandos.
             for (int i = 0; i < args.Length; i++)
@@ -18,6 +18,10 @@ namespace MyWinFormsApp
                 {
                     port = args[i + 1];
                 }
+            }
+            if (port == null) //Incorporé esta linea para evitar el aviso: (Possible null reference srgument for parameter "port" in "whatsAppLikeChat.WhatsAppLikeChat(string port)".)
+            {
+                throw new ArgumentNullException("El puerto debe ser especificado con el argumento -port.");
             }
 
             ApplicationConfiguration.Initialize();

@@ -4,8 +4,9 @@ using System.Net.Sockets;
 
 namespace MyWinFormsApp {
     public partial class WhatsAppLikeChat : Form {
-        private TcpListener _listener; //Aquí se declara una variable de instancia (_listener) de tipo TcpListener que será utilizada para gestionar las conexiones entrantes. 
+        private TcpListener? _listener; //Aquí se declara una variable de instancia (_listener) de tipo TcpListener que será utilizada para gestionar las conexiones entrantes. 
         //Revisar el método StartServer, ahí se usa esta variable.
+        //Además se le agregó "?" para indicar que es una propiedad que puede ser nullable.
 
         public WhatsAppLikeChat(string port) //Ventana principal.
         {
@@ -14,12 +15,12 @@ namespace MyWinFormsApp {
             this.Text = "WhatsAppLikeChat";
 
             // Mostrar el puerto escogido por el usuario en el TextBox correspondiente al puerto.
-            if (!string.IsNullOrEmpty(port)) 
+            if (!string.IsNullOrEmpty(port)) //Método por defecto de la clase object para ver si está null o empty
             {
                 textBox4.Text = port; //Mostrar el puerto escogido como origen.
 
-                // Iniciar el servidor si el puerto es válido.
-                if (int.TryParse(port, out int portNumber)) 
+                // Iniciar el servidor si el puerto es válido, además convierte string en int.
+                if (int.TryParse(port, out int portNumber))
                 {
                     StartServer(portNumber);//Inicializamos la función/método para inciar la escucha en el puerto seleccionado. 
                                 //Nota: En este programa como no se utiliza la opción de comunicarse entre diferentes dispositivos, se le pasa una ip por defecto que apunta al local host: 127.0.0.1
@@ -45,7 +46,7 @@ namespace MyWinFormsApp {
 
             using (NetworkStream stream = client.GetStream())
             using (StreamReader reader = new StreamReader(stream)) {
-                string message = await reader.ReadLineAsync();
+                string? message = await reader.ReadLineAsync(); //Para indicar que el mensaje puede ser null
                 if (message != null) 
                 {
                     // Mostrar el mensaje recibido en el TextBox
@@ -96,9 +97,9 @@ namespace MyWinFormsApp {
                             textBox1.Text = "";
                         }
                     }
-                    catch (Exception ex) 
+                    catch (Exception error) 
                     { // En caso de que el puerto esté ocupado y se deniegue el uso del puerto. Ejemplos de errores que dió: FormatException o ArgumentOutOfRangeException si el puerto no es un número válido.
-                        MessageBox.Show("Error al enviar el mensaje: " + ex.Message);
+                        MessageBox.Show("Error al enviar el mensaje: " + error.Message);
                     }
                 }
         }
